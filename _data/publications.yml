@@ -104,20 +104,20 @@
 #   awards:
 #     - "Oral Presentation"
 
-# - id: latentfusion
-#   title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
-#   venue: CVPR, 2020
-#   description: "By learning to predict geometry from images, you can do zero-shot pose estimation with a single network."
-#   project_page: "https://latentfusion.github.io"
-#   github: NVlabs/latentfusion
-#   arxiv: 1912.00416
-#   image: latentfusion_before.jpg
-#   image_mouseover: latentfusion_after.mp4
-#   authors:
-#     - keunhong
-#     - amousavian
-#     - yux
-#     - fox
+- id: latentfusion
+  title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
+  venue: CVPR, 2020
+  description: "By learning to predict geometry from images, you can do zero-shot pose estimation with a single network."
+  project_page: "https://latentfusion.github.io"
+  github: NVlabs/latentfusion
+  arxiv: 1912.00416
+  image: latentfusion_before.jpg
+  image_mouseover: latentfusion_after.mp4
+  authors:
+    - keunhong
+    - amousavian
+    - yux
+    - fox
 
 - id: ICRA2026
   title: "In-hand pose estimation"
