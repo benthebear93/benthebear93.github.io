@@ -153,7 +153,7 @@
   description: "This paper presents an optimization-based framework for in-hand manipulation with a robotic hand equipped with compact Magnetic Tactile Sensors (MTSs).  "
   project_page: ""
   github: 
-  arxiv: https://arxiv.org/pdf/2503.08222
+  arxiv: 2503.08222
   image: rolling.png
   authors:
     - Haegu 
@@ -167,7 +167,7 @@
   description: "This study introduces a framework to improve hole quality in freeform CFRP drilling using industrial robots."
   project_page: ""
   github: 
-  arxiv: https://link.springer.com/article/10.1007/s00170-025-15333-0
+  arxiv: 
   image: posture_opt.png
   authors:
     - YunSeok 
@@ -182,7 +182,7 @@
   description: "This paper presents an approach to cable following and routing that relies on tactile sensing. "
   project_page: ""
   github: 
-  arxiv: https://ieeexplore.ieee.org/document/10843928
+  arxiv: 
   image: iccma.jpg
   authors:
     - Haegu 
