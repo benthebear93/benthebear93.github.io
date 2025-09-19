@@ -103,21 +103,20 @@
 #     - rmbrualla
 #   awards:
 #     - "Oral Presentation"
-
-- id: latentfusion
-  title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
-  venue: CVPR, 2020
-  description: "By learning to predict geometry from images, you can do zero-shot pose estimation with a single network."
-  project_page: "https://latentfusion.github.io"
-  github: NVlabs/latentfusion
-  arxiv: 1912.00416
-  image: latentfusion_before.jpg
-  image_mouseover: latentfusion_after.mp4
-  authors:
-    - keunhong
-    - amousavian
-    - yux
-    - fox
+# - id: latentfusion
+#   title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
+#   venue: CVPR, 2020
+#   description: "By learning to predict geometry from images, you can do zero-shot pose estimation with a single network."
+#   project_page: "https://latentfusion.github.io"
+#   github: NVlabs/latentfusion
+#   arxiv: 1912.00416
+#   image: latentfusion_before.jpg
+#   image_mouseover: latentfusion_after.mp4
+#   authors:
+#     - keunhong
+#     - amousavian
+#     - yux
+#     - fox
 
 - id: ICRA2026
   title: "In-hand pose estimation"
@@ -155,24 +154,10 @@
   project_page: ""
   github: 
   arxiv: https://arxiv.org/pdf/2503.08222
-  image: posture_opt.jpg
+  image: rolling.png
   authors:
     - Haegu 
     - Yitaek
-    - Victor
-    - Christoffer 
-
-
-- id: ICCMA
-  title: "Sim-to-Real Transfer for Cable Manipulation with Tactile Sensing and Homotopy-Constrained Path Planning"
-  venue: ICCMA, 2024
-  description: "This paper presents an approach to cable following and routing that relies on tactile sensing. "
-  project_page: ""
-  github: 
-  arxiv: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10843928&casa_token=XMhE1o__O2AAAAAA:vlaNCc47IcUlCgsOHoAxlkBbhoSwm8TlKupwJzkJyHfkSEwIrN_MazoZlK2Yz_xEEHctgKCwOg&tag=1
-  image: posture_opt.jpg
-  authors:
-    - Haegu 
     - Victor
     - Christoffer 
 
@@ -182,11 +167,24 @@
   description: "This study introduces a framework to improve hole quality in freeform CFRP drilling using industrial robots."
   project_page: ""
   github: 
-  arxiv: 
-  image: posture_opt.jpg
+  arxiv: https://link.springer.com/article/10.1007/s00170-025-15333-0
+  image: posture_opt.png
   authors:
     - YunSeok 
     - Haegu
     - DongChan
     - Jaewoo
     - HyungWook 
+
+- id: ICCMA
+  title: "Sim-to-Real Transfer for Cable Manipulation with Tactile Sensing and Homotopy-Constrained Path Planning"
+  venue: ICCMA, 2024
+  description: "This paper presents an approach to cable following and routing that relies on tactile sensing. "
+  project_page: ""
+  github: 
+  arxiv: https://ieeexplore.ieee.org/document/10843928
+  image: iccma.jpg
+  authors:
+    - Haegu 
+    - Victor
+    - Christoffer 
