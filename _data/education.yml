@@ -1,11 +1,10 @@
-- name: University of Washington 
+- name: University of Southern Denmark 
   description: >-
-    Ph. D in Computer Science, advised by <a href="https://smseitz.com">Steven M. Seitz</a> and
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.<br />
-    Supported by Samsung Scholarship 2015-2020 ($50,000/year for 5 years)
-  dates: Fall 2015 - Spring 2022
+    Ph. D in Robotics, advised by <a href="https://scholar.google.com/citations?user=GGicR_kAAAAJ&hl=en">Christoffer Sloth</a>
+    Founded by CaPeX 2024-2027 (Full funding)
+  dates: Dec 2024 - Jan 2027(expected)
 
-- name: University of Illinois at Urbana-Champaign
+- name: Ulsan National Institute of Science and Technology
   description: >-
-    B.S. in Computer Science, advised by <a href="https://dhoiem.cs.illinois.edu/">Derek Hoiem</a>.
-  dates: Fall 2009 - Spring 2013
+    M`.S. in Mechanical Engineering, advised by <a href="https://scholar.google.com/citations?user=7ljIpGAAAAAJ&hl=ko">Hyung Wook Park</a>.
+  dates: Jan 2020 - Dec 2021
