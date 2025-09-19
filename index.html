@@ -9,6 +9,8 @@ layout: null
 
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>{{ site.name }}</title>
+  
+  <link rel="icon" type="image/x-icon" href="images/portrait.jpg">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
@@ -23,9 +25,7 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
@@ -40,24 +40,24 @@ layout: null
 
   <section class="hero">
     <div class="hero-body container is-max-desktop">
-      <div class="columns">
+      <div class="columns is-vcentered">
 
         <div class="column is-4">
-          <figure class="image portrait">
-            <img src="{{ '/images/portrait.jpg' | relative_url }}" />
-          </figure>
+          <div class="portrait">
+            <img src="{{ '/images/portrait.png' | relative_url }}" />
+          </div>
         </div>
 
         <div class="column">
           <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
+            <b>{{ site.name }}</b>
           </h1>
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
             <div class="buttons">
-              <a class="external-link button is-light" href="cv.html">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV</span>
+              <a class="external-link button is-light" href="cv.pdf">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>CV</span>
               </a>
 
               <a class="external-link button is-light"
@@ -71,9 +71,14 @@ layout: null
                 <span>Github</span>
               </a>
 
-              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
+              <a class="external-link button is-light" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                <span>Linkedin</span>
+              </a>
+
+              <a class="external-link button is-light" href="https://x.com/{{ site.twitter_username }}">
                 <span class="icon"><i class="fab fa-twitter"></i></span>
-                <span>Twitter</span>
+                <span>𝕏 (Twitter)</span>
               </a>
             </div>
 
@@ -93,51 +98,17 @@ layout: null
   <section class="section">
     <div class="container is-max-desktop">
 
-      <h2 class="title is-3">Highlights</h2>
-      <div class="columns is-multiline">
-        {% for highlight in site.data.highlights %}
-        <div class="column is-4">
-          <div class="card highlight-card">
-            <div class="card-image">
-              <figure class="image">
-                {% if highlight.video %}
-                <video autoplay loop muted playsinline class="highlight-media">
-                  <source src="./images/{{ highlight.video }}" type="video/mp4">
-                  <img src="./images/{{ highlight.image }}" alt="{{ highlight.title }}">
-                </video>
-                {% else %}
-                <img src="./images/{{ highlight.image }}" alt="{{ highlight.title }}">
-                {% endif %}
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-5 highlight-title">
-                    <a href="{{ highlight.url }}" target="_blank" rel="noopener">{{ highlight.title }}</a>
-                  </p>
-                </div>
-              </div>
-              <div class="content highlight-description">
-                {{ highlight.description }}
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
+      <h2 class="title is-3">News</h2>
+      <div class="content">
+        <ul>
+          {% for news in site.data.news %}
+          <li>
+            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-    </div>
-  </section>
-
-  <!-- Divider between Highlights and Publications -->
-  <div class="hr">
-    <div class="container">
-      <hr>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="container is-max-desktop">
+      <br><br>
       <h2 class="title is-3">Publications</h2>
 
       {% for publication in site.data.publications %}
@@ -151,7 +122,9 @@ layout: null
               Your browser does not support the video tag.
             </video>
             {% endif %}
-            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
+            {% if publication.image %}
+              <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
+            {% endif %}
           </div>
         </div>
 
@@ -175,18 +148,19 @@ layout: null
             <div class="publication-venue">
               <span>{{ publication.venue }}</span>
               {% for award in publication.awards %}
-              <span class="publication-venue-emph">{{ award }}<span>
-                  {% endfor %}
+                <span class="publication-venue-emph">{{ award }}<span>
+              {% endfor %}
             </div>
             <p class="publication-description">{{ publication.description }}</p>
             <!-- Publication Links. -->
             <div class="publication-links buttons field has-addons">
+              {% if publication.project_page %}
               <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
                 <span class="icon"><i class="fas fa-globe-asia"></i></span>
                 <span>Project Page</span>
               </a>
-              <a class="external-link button is-small is-ghost"
-                href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
+              {% endif %}
+              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>PDF</span>
               </a>
@@ -206,7 +180,19 @@ layout: null
         </div>
       </div>
       {% endfor %}
+      <br><br>
+    <h2 class="title is-3">Services</h2>
+    <div class="content">
+      <ul>
+        {% for services in site.data.services %}
+        <li>
+            <b>{{ services.role }}</b>: {{ services.description | markdownify | remove: '<p>' | remove: '</p>' }}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
+  </div>
+
   </section>
 
 
@@ -227,7 +213,7 @@ layout: null
         <div class="column is-8">
           <div class="content">
             <p>
-              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
+                This page was built based on <a href="https://github.com/keunhong/keunhong.github.io">this template</a>.
             </p>
           </div>
         </div>
