@@ -119,6 +119,64 @@
 #     - yux
 #     - fox
 
+
+- id: ICRA2026
+  title: "In-hand pose estimation"
+  venue: ICRA, 2026 (Submitted)
+  description: "-"
+  project_page: ""
+  github: 
+  arxiv: 
+  image: 
+  authors:
+    - Frederik 
+    - Yitaek
+    - Casper
+    - Haegu
+    - Christoffer 
+
+- id: ICRA2026
+  title: "Manipulation"
+  venue: ICRA, 2026 (Submitted)
+  description: "-"
+  project_page: ""
+  github: 
+  arxiv: 
+  image: 
+  authors:
+    - Haegu 
+    - Yitaek
+    - Casper
+    - Christoffer 
+
+- id: IROS2025
+  title: "Trajectory Optimization for In-Hand Manipulation with Tactile Force Control"
+  venue: IROS, 2025
+  description: "This paper presents an optimization-based framework for in-hand manipulation with a robotic hand equipped with compact Magnetic Tactile Sensors (MTSs).  "
+  project_page: ""
+  github: 
+  arxiv: https://arxiv.org/pdf/2503.08222
+  image: posture_opt.jpg
+  authors:
+    - Haegu 
+    - Yitaek
+    - Victor
+    - Christoffer 
+
+
+- id: ICCMA
+  title: "Sim-to-Real Transfer for Cable Manipulation with Tactile Sensing and Homotopy-Constrained Path Planning"
+  venue: ICCMA, 2024
+  description: "This paper presents an approach to cable following and routing that relies on tactile sensing. "
+  project_page: ""
+  github: 
+  arxiv: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10843928&casa_token=XMhE1o__O2AAAAAA:vlaNCc47IcUlCgsOHoAxlkBbhoSwm8TlKupwJzkJyHfkSEwIrN_MazoZlK2Yz_xEEHctgKCwOg&tag=1
+  image: posture_opt.jpg
+  authors:
+    - Haegu 
+    - Victor
+    - Christoffer 
+
 - id: posture_opt
   title: "Enhancement of the hole quality of freeform CFRP with industrial robot posture optimization"
   venue: IJAMT, 2025
