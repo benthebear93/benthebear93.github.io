@@ -168,6 +168,7 @@
   project_page: ""
   github: 
   arxiv: 
+  springer: https://link.springer.com/article/10.1007/s00170-025-15333-0
   image: posture_opt.png
   authors:
     - YunSeok 
@@ -175,6 +176,9 @@
     - DongChan
     - Jaewoo
     - HyungWook 
+  equal_contrib:
+    - YunSeok
+    - Haegu
 
 - id: ICCMA
   title: "Sim-to-Real Transfer for Cable Manipulation with Tactile Sensing and Homotopy-Constrained Path Planning"
@@ -183,6 +187,7 @@
   project_page: ""
   github: 
   arxiv: 
+  ieee: https://ieeexplore.ieee.org/document/10843928
   image: iccma.jpg
   authors:
     - Haegu 

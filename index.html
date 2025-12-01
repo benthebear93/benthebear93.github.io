@@ -143,6 +143,15 @@ layout: null
               </span>
               {% endfor %}
             </div>
+            {% if publication.equal_contrib %}
+            <div class="publication-contrib">
+              <span>Equal contribution:</span>
+              {% for author_id in publication.equal_contrib %}
+              {% assign author = site.data.authors[author_id] %}
+              {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %}{% if forloop.index == forloop.length - 1 %} and {% else %}, {% endif %}{% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
             <div class="publication-venue">
               <span>{{ publication.venue }}</span>
               {% for award in publication.awards %}
@@ -158,6 +167,7 @@ layout: null
                 <span>Project Page</span>
               </a>
               {% endif %}
+              {% if publication.arxiv %}
               <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>PDF</span>
@@ -166,6 +176,25 @@ layout: null
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
               </a>
+              {% elsif publication.ieee %}
+              <a class="external-link button is-small is-ghost" href="{{ publication.ieee }}">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PDF</span>
+              </a>
+              <a class="external-link button is-small is-ghost" href="{{ publication.ieee }}">
+                <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+                <span>IEEE Xplore</span>
+              </a>
+              {% elsif publication.springer %}
+              <a class="external-link button is-small is-ghost" href="{{ publication.springer }}">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PDF</span>
+              </a>
+              <a class="external-link button is-small is-ghost" href="{{ publication.springer }}">
+                <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+                <span>Springer</span>
+              </a>
+              {% endif %}
               {% if publication.github %}
               <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
                 <span class="icon"><i class="fa fab fa-github"></i></span>

@@ -124,6 +124,15 @@ layout: null
               </span>
               {% endfor %}
             </div>
+            {% if publication.equal_contrib %}
+            <div class="publication-contrib">
+              <span>Equal contribution:</span>
+              {% for author_id in publication.equal_contrib %}
+              {% assign author = site.data.authors[author_id] %}
+              {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %}{% if forloop.index == forloop.length - 1 %} and {% else %}, {% endif %}{% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
             {{ publication.description }}
           </div>
           <div class="column is-one-fifths has-text-right">
