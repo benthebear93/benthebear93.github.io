@@ -36,6 +36,16 @@ h2 {
     margin-top: 0.25em;
 }
 
+.publication-links {
+    margin-top: 0.3em;
+}
+
+.publication-link {
+    margin-right: 0.75em;
+    color: #000;
+    white-space: nowrap;
+}
+
 @media print {
     html, body {
         height: auto;

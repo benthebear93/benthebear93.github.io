@@ -134,6 +134,26 @@ layout: null
             </div>
             {% endif %}
             {{ publication.description }}
+            {% if publication.arxiv or publication.ieee or publication.springer or publication.github or publication.project_page %}
+            <div class="publication-links">
+              {% if publication.arxiv %}
+              <a class="publication-link" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a class="publication-link" href="https://arxiv.org/abs/{{ publication.arxiv }}"><i class="ai ai-arxiv"></i> arXiv</a>
+              {% elsif publication.ieee %}
+              <a class="publication-link" href="{{ publication.ieee }}"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a class="publication-link" href="{{ publication.ieee }}"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+              {% elsif publication.springer %}
+              <a class="publication-link" href="{{ publication.springer }}"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a class="publication-link" href="{{ publication.springer }}"><i class="fas fa-external-link-alt"></i> Springer</a>
+              {% endif %}
+              {% if publication.github %}
+              <a class="publication-link" href="https://github.com/{{ publication.github }}"><i class="fab fa-github"></i> Code</a>
+              {% endif %}
+              {% if publication.project_page %}
+              <a class="publication-link" href="{{ publication.project_page }}"><i class="fas fa-globe-asia"></i> Project</a>
+              {% endif %}
+            </div>
+            {% endif %}
           </div>
           <div class="column is-one-fifths has-text-right">
             {{ publication.venue }}
