@@ -119,28 +119,13 @@
 #     - fox
 
 - id: ICRA2026
-  title: "In-hand pose estimation"
-  venue: ICRA, 2026 (Submitted)
+  title: "Manipulation via Force Distribution at Contact"
+  venue: arXiv preprint 
   description: "-"
   project_page: ""
   github: 
-  arxiv: 
-  image: 
-  authors:
-    - Frederik 
-    - Yitaek
-    - Casper
-    - Haegu
-    - Christoffer 
-
-- id: ICRA2026
-  title: "Manipulation"
-  venue: ICRA, 2026 (Submitted)
-  description: "-"
-  project_page: ""
-  github: 
-  arxiv: 
-  image: 
+  arxiv: 2602.03350
+  image: contact_dist.png
   authors:
     - Haegu 
     - Yitaek
