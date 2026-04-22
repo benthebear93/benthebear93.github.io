@@ -118,6 +118,16 @@
 #     - yux
 #     - fox
 
+- id: safety_critical_control_icra2026_workshop
+  title: "Safety-Critical Control under Smoothed Implicit Contact Dynamics"
+  venue: ICRA, 2026 Workshop
+  description: "Workshop on the Path Towards Generalizable Contact-Rich Robotics: Control and Representation."
+  image: hopper_jump_cbf_fin.gif
+  authors:
+    - Haegu
+    - Yitaek
+    - Christoffer
+
 - id: ICRA2026
   title: "Manipulation via Force Distribution at Contact"
   venue: arXiv preprint 
