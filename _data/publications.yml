@@ -134,7 +134,7 @@
   description: "-"
   project_page: ""
   github: 
-  arxiv: 2602.03350
+  arxiv: "2602.03350"
   image: contact_dist.png
   authors:
     - Haegu 
@@ -148,7 +148,7 @@
   description: "This paper presents an optimization-based framework for in-hand manipulation with a robotic hand equipped with compact Magnetic Tactile Sensors (MTSs).  "
   project_page: ""
   github: 
-  arxiv: 2503.08222
+  arxiv: "2503.08222"
   image: rolling.png
   authors:
     - Haegu 
