@@ -214,14 +214,12 @@ layout: null
       </div>
       {% endfor %}
       <br><br>
-    <h2 class="title is-3">Services</h2>
+    <h2 class="title is-3">Teaching</h2>
     <div class="content">
       <ul>
-        {% for services in site.data.services %}
-        <li>
-            <b>{{ services.role }}</b>: {{ services.description | markdownify | remove: '<p>' | remove: '</p>' }}
-        </li>
-        {% endfor %}
+        <li>Advanced Robot Control, (F26)</li>
+        <li>Advanced Robot Control, (F25)</li>
+        <li>Project in Advanced Robotics, (F24)</li>
       </ul>
     </div>
   </div>
